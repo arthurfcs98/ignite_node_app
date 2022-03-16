@@ -1,11 +1,11 @@
-import { CategoryRepository } from "../repositories/CategoryRepository";
+import { CategoryRepository } from "../../repositories/implementations/CategoryRepository";
 
 interface IRequest {
     name: string;
     description: string;
 }
 
-class CreateCategoryService {
+class CreateCategoryUseCase {
     // eslint-disable-next-line prettier/prettier
     constructor(private categoryRepository: CategoryRepository) { }
 
@@ -20,4 +20,4 @@ class CreateCategoryService {
     }
 }
 
-export { CreateCategoryService };
+export { CreateCategoryUseCase };
