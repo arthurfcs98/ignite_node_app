@@ -6,8 +6,8 @@ class ListCategoriesController {
     // eslint-disable-next-line prettier/prettier
     constructor(private listCategoriesUseCase: ListCategoriesUseCase) { }
 
-    handle(request: Request, response: Response): Response {
-        const allCategories = this.listCategoriesUseCase.execute();
+    async handle(request: Request, response: Response): Promise<Response> {
+        const allCategories = await this.listCategoriesUseCase.execute();
 
         return response.json(allCategories);
     }
