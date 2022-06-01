@@ -17,7 +17,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 app.use(router);
 
 app.listen(3333, () => {
-    console.log("server is running");
+    console.log("server is running on port 3333");
 });
 
 app.get("/", (request, response) => {
