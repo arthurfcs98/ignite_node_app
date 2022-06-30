@@ -1,0 +1,26 @@
+_id: req_79aa476b66a34c8f978ff6c7d347eb63
+type: Request
+parentId: fld_f4726926267143abb59242c3050000b6
+modified: 1655752808398
+created: 1655752769099
+url: "{{ _.baseUrl }}/categories/import"
+name: Import
+description: ""
+method: POST
+body:
+  mimeType: application/octet-stream
+  fileName: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/octet-stream
+    id: pair_a526862b99f64a73a7e6a7b34c50f876
+authentication: {}
+metaSortKey: -1655752417993.5
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

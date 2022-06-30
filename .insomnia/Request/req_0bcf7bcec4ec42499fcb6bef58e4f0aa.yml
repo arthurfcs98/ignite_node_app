@@ -1,0 +1,30 @@
+_id: req_0bcf7bcec4ec42499fcb6bef58e4f0aa
+type: Request
+parentId: fld_f61dc85d50fc416a88cd7b619c286994
+modified: 1655752312736
+created: 1655749985934
+url: "{{ _.baseUrl }}/specifications/"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name":"teste 1 ",
+    	"description": "descrição teste"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c4d33c0acc5d4114b88096b3e7d00819
+authentication: {}
+metaSortKey: -1655749985934
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

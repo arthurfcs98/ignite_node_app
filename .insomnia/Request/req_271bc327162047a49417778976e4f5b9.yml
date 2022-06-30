@@ -1,0 +1,30 @@
+_id: req_271bc327162047a49417778976e4f5b9
+type: Request
+parentId: fld_f4726926267143abb59242c3050000b6
+modified: 1655752765084
+created: 1655752469317
+url: "{{ _.baseUrl }}/categories/"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "teste categoria",
+    	"description": "teste descrição de categoria"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_f72eb6f2bace40e8a0ab79a4594759da
+authentication: {}
+metaSortKey: -1655752469317
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
