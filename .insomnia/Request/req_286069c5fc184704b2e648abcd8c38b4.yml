@@ -1,0 +1,32 @@
+_id: req_286069c5fc184704b2e648abcd8c38b4
+type: Request
+parentId: fld_d8576dcea1e845d4bac6120e0d6d9f6b
+modified: 1656550119450
+created: 1655752963835
+url: "{{ _.baseUrl }}/users/"
+name: Create
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Arthur Freitas Cesarino dos Santos",
+    	"email": "arthurfcs12@gmail.com",
+    	"password": "32159487",
+    	"driver_license": "123456789"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c4d33c0acc5d4114b88096b3e7d00819
+authentication: {}
+metaSortKey: -1655749985934
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
