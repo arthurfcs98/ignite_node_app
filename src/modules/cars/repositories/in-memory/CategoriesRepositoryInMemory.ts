@@ -1,4 +1,5 @@
-import { Category } from "../../entities/Category";
+import { Category } from "@modules/cars/entities/Category";
+
 import {
     ICategoryRepository,
     ICreateCategoryDTO,
@@ -28,4 +29,4 @@ class CategoriesRepositoryInMemory implements ICategoryRepository {
     }
 }
 
-export default CategoriesRepositoryInMemory;
+export { CategoriesRepositoryInMemory };
