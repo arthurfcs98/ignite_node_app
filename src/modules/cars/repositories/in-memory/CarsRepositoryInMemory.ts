@@ -9,7 +9,7 @@ class CarsRepositoryInMemory implements ICarsRepository {
     async create({
         brand,
         category_id,
-        daily_rete,
+        daily_rate,
         description,
         fine_amount,
         license_plate,
@@ -20,7 +20,7 @@ class CarsRepositoryInMemory implements ICarsRepository {
         Object.assign(car, {
             brand,
             category_id,
-            daily_rete,
+            daily_rate,
             description,
             fine_amount,
             license_plate,

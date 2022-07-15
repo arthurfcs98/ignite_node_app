@@ -7,17 +7,17 @@ import { AppError } from "@shared/errors/AppError";
 interface IRequest {
     name: string;
     description: string;
-    daily_rete: number;
+    daily_rate: number;
     license_plate: string;
     fine_amount: number;
     brand: string;
     category_id: string;
 }
 
-// @injectable()
+@injectable()
 class CreateCarUseCase {
     constructor(
-        // @inject("CarsRepository")
+        @inject("CarsRepository")
         private carsRepository: ICarsRepository
     ) {}
     async execute({
@@ -25,7 +25,7 @@ class CreateCarUseCase {
         license_plate,
         brand,
         category_id,
-        daily_rete,
+        daily_rate,
         description,
         fine_amount,
     }: IRequest): Promise<Car> {
@@ -39,7 +39,7 @@ class CreateCarUseCase {
             name,
             brand,
             category_id,
-            daily_rete,
+            daily_rate,
             description,
             fine_amount,
             license_plate,

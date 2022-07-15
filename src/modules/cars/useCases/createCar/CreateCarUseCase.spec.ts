@@ -15,7 +15,7 @@ describe("Create Car", () => {
         const car = await createCarUseCase.execute({
             name: "Car Name",
             description: "Car Description",
-            daily_rete: 100,
+            daily_rate: 100,
             license_plate: "ABC-1234",
             fine_amount: 60,
             brand: "Car Brand",
@@ -30,7 +30,7 @@ describe("Create Car", () => {
             await createCarUseCase.execute({
                 name: "Car Name 1",
                 description: "Car Description",
-                daily_rete: 100,
+                daily_rate: 100,
                 license_plate: "ABC-1234",
                 fine_amount: 60,
                 brand: "Car Brand",
@@ -40,7 +40,7 @@ describe("Create Car", () => {
             await createCarUseCase.execute({
                 name: "Car Name 2",
                 description: "Car Description",
-                daily_rete: 100,
+                daily_rate: 100,
                 license_plate: "ABC-1234",
                 fine_amount: 60,
                 brand: "Car Brand",
@@ -53,7 +53,7 @@ describe("Create Car", () => {
         const car = await createCarUseCase.execute({
             name: "Car Name",
             description: "Car Description",
-            daily_rete: 100,
+            daily_rate: 100,
             license_plate: "ABCD-12345",
             fine_amount: 60,
             brand: "Car Brand",
