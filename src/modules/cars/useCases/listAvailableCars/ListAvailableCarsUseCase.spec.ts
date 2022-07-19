@@ -3,18 +3,20 @@ import { CarsRepositoryInMemory } from "@modules/cars/repositories/in-memory/Car
 
 import { ListAvailableCarsUseCase } from "./ListAvailableCarsUseCase";
 
-let carsRepository: ICarsRepository;
+let carsRepositoryInMemory: ICarsRepository;
 let listAvailableCarsUseCase: ListAvailableCarsUseCase;
 
 describe("List Cars", () => {
     beforeAll(() => {
-        carsRepository = new CarsRepositoryInMemory();
+        carsRepositoryInMemory = new CarsRepositoryInMemory();
 
-        listAvailableCarsUseCase = new ListAvailableCarsUseCase(carsRepository);
+        listAvailableCarsUseCase = new ListAvailableCarsUseCase(
+            carsRepositoryInMemory
+        );
     });
 
     it("Should be able to list all available cars.", async () => {
-        const car = await carsRepository.create({
+        const car = await carsRepositoryInMemory.create({
             name: "Car Name",
             description: "Car Description",
             daily_rate: 100,
@@ -30,7 +32,7 @@ describe("List Cars", () => {
     });
 
     it("Should be able to list all available cars by brand", async () => {
-        const car = await carsRepository.create({
+        const car = await carsRepositoryInMemory.create({
             name: "Car brand test",
             description: "Car Description",
             daily_rate: 100,
@@ -47,7 +49,7 @@ describe("List Cars", () => {
         expect(cars).toEqual([car]);
     });
     it("Should be able to list all available cars by name", async () => {
-        const car = await carsRepository.create({
+        const car = await carsRepositoryInMemory.create({
             name: "Car Name test",
             description: "Car Description",
             daily_rate: 100,
@@ -64,7 +66,7 @@ describe("List Cars", () => {
         expect(cars).toEqual([car]);
     });
     it("Should be able to list all available cars by category_id", async () => {
-        const car = await carsRepository.create({
+        const car = await carsRepositoryInMemory.create({
             name: "Car category_id test",
             description: "Car Description",
             daily_rate: 100,
