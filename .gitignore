@@ -3,3 +3,4 @@ node_modules
 tmp
 awsKeys.txt
 .env
+ignite-nodeJs.pem
