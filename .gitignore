@@ -1,6 +1,10 @@
 node_modules
 .vscode
-tmp
-awsKeys.txt
+tmp/*
+!tmp/.gitkeep
 .env
+coverage
+awsKeys.txt
 ignite-nodeJs.pem
+dist
+ormconfig.json
