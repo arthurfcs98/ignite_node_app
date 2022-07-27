@@ -8,3 +8,4 @@ awsKeys.txt
 ignite-nodeJs.pem
 dist
 ormconfig.json
+docker-compose.yml
